@@ -1,0 +1,1285 @@
+:root {
+  --BG-color: rgb(255, 255, 255);
+  --Header-BG-color: rgb(255, 255, 255);
+  --Header-color: #A7CDCC;
+  --Text-color: #004A55;
+  --IconTop-color: #004A55;
+  --TopButtonsBG-color: #F87D09;
+  --StyleList-color: #004A55;
+  --StyleListText-color: #F6F6F6;
+  --OutputTitle-color: #004A55;
+  --PaletteTitle-color: #004A55;
+  --PaletteText-color: #004A55;
+  --PaletteButtons-color: #A7CDCC;
+  --PaletteBG-color: #F6F6F6;
+  --DisabledButtonBG-color: #F6F6F6;
+  --AskQuestionBG-color: #F6F6F6;
+  --SettingsAppPage-color: #004A55;
+  --AnswerStyle-color: #004A55;
+  --LoadingQA-color: #F87D09;
+  --AboutPageText-color: #004A55;
+  --LoginPageText-color: #004A55;
+  --LoginPageTextHref-color: #A7CDCC;
+  --MainButtonHoverRBG-color: rgb(248, 125, 9, 0.5);
+  --MainButtonHover-color: #F87D09;
+  --PaletteButtonHoverRBG-color: rgb(248, 125, 9, 0.5);
+  --PaletteButtonHover-color: #F87D09;
+  --QAButtonHoverRBG-color: rgb(248, 125, 9, 0.5);
+  --QAButtonHover-color: #F87D09;
+  --QuestionInput-color: #004A55;
+  --SavedDividerButtonHoverRBG-color: rgb(248, 125, 9, 0.5);
+  --SavedDividerButtonHover-color: #F87D09;
+  --SavedSessionButtonHoverRBG-color: rgb(248, 125, 9, 0.5);
+  --SavedSessionButtonHover-color: #F87D09;
+  --SavedSessionTitle-color: #004A55;
+  --NotionInput-color: #004A55;
+  --FileDisclaimer-color: #F87D09;
+  --LongLoadingMsg-color: #F87D09;
+  --Checkbox-color: #004A55;
+  --InputFocusBorder-color: #004A55;
+  --TextArea-color: rgb(2, 2, 2);
+  --Divider-color: #F87D09;
+  --ShinyButton-color: #F87D09;
+  --Disclaimer-color: #004A55;
+  --AlertBoardBG-color: #F6F6F6;
+  --AlertBoardTitle-color: #F87D09;
+  --AlertBoardContent-color: #F87D09;
+  --BulletPoints-color: rgb(239, 239, 239);
+  --ButtonGenericBG-color: #004A55;/*#0095ff;*/
+  --ButtonGeneric-color: #fff;
+  --Titles-color: blanchedalmond;
+  --TextArea-BG-color: rgb(238, 240, 243);
+}
+
+body {
+  color-scheme: normal;
+  border: 0;
+}
+
+.Page-style {
+  background-color: var(--BG-color);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color-scheme: normal;
+}
+
+.FloaterApp {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo-spin {
+  animation: App-logo-spin infinite 5s linear;
+  height: 55px;
+}
+
+.App-logo {
+  height: 55px;
+}
+
+.App-BG {
+  margin-top: 8px;
+  background-color: var(--BG-color); /* #40C4DA; */
+  color-scheme: normal;
+}
+
+.App-header {
+  background-color: var(--Header-BG-color); /* rgb(42,210,253);*/ /* #40C4DA; */
+  border-radius: 0px;
+  height: 75px;
+  padding: 0px;
+  color: var(--TextArea-color);
+  /*margin: 5px;*/ /* add a 10px margin around the element */
+  border: 0px solid var(--BG-color); /* add a 2px black border */
+  box-sizing: border-box; /* include padding and border in the element's total width and height */
+}
+
+.App-title {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-subtitle {
+  font-size: 1.0em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.TextTopRight-style{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+  color: rgb(59, 55, 55);
+}
+
+.TopTable-style{
+  text-align: left;
+}
+
+.TopTableRight-style{
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: rgb(59, 55, 55);
+}
+
+.App-intro {
+  font-size: large;
+  font-family: Helvetica, sans-serif, Arial;
+  color: var(--Titles-color);
+}
+
+.OutputTitleContainer {
+  margin-bottom: 0.2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.OutputTitle {
+  font-size: medium;
+  font-family: Nunito;
+  color: var(--OutputTitle-color);
+  font-weight: 700;
+  z-index: 20000;
+}
+
+.App-general {
+  font-size: medium;
+  font-family: Helvetica, sans-serif, Arial;
+  color: var(--Titles-color);
+}
+
+.App-general-left {
+  font-size: medium;
+  font-family: Helvetica, sans-serif, Arial;
+  color: var(--Titles-color);
+  text-align: left;
+}
+
+.App-general-left-process {
+  font-size: medium;
+  font-family: Helvetica, sans-serif, Arial;
+  color: var(--Titles-color);
+  text-align: left;
+  padding: 1.5%;
+}
+
+.App-general-left-process-title {
+  font-size: medium;
+  font-family: Helvetica, sans-serif, Arial;
+  color: var(--PaletteTitle-color);
+  text-align: left;
+  width: 80%;
+}
+
+.PaletteOutput-title {
+  font-size: medium;
+  font-family: Nunito;
+  color: var(--PaletteTitle-color);
+  text-align: left;
+  width: 70%;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.PaletteOutputSaved-title {
+  font-size: medium;
+  font-family: Nunito;
+  color: var(--PaletteTitle-color);
+  text-align: left;
+  width: 98%;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+.App-general-left-whitish {
+  font-size: medium;
+  font-family: Helvetica, sans-serif, Arial;
+  color: rgb(239, 239, 239);
+  text-align: left;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.AboutPageText {
+  font-size: medium;
+  font-family: Nunito;
+  color: var(--AboutPageText-color);
+  text-align: left;
+  margin: 0.8em;
+}
+
+.SettingsAppPage {
+  font-size: 14px;
+  font-family: Nunito;
+  color: var(--SettingsAppPage-color);
+  text-align: left;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.App-general-left-whitish-nomargin {
+  font-size: medium;
+  font-family: Helvetica, sans-serif, Arial;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.App-general-whitish {
+  font-size: medium;
+  font-family: Helvetica, sans-serif, Arial;
+  color: rgb(239, 239, 239);
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.LoginPageText {
+  font-size: medium;
+  font-family: Nunito;
+  color: var(--LoginPageText-color);
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.LoginPageTextHref {
+  font-size: medium;
+  font-family: Nunito;
+  color: var(--LoginPageTextHref-color);
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.TextArea-style{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*border: 3px solid #ccc;*/
+  padding: 5px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  /*background-color: var(--TextArea-BG-color);*/
+  color: var(--TextArea-color);
+  white-space: pre-line;
+}
+
+.TextAreaQuestion-style{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 8px;
+  border: 3px solid #ccc;
+  padding: 5px;
+  width: 220px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--TextArea-BG-color);
+  color: var(--TextArea-color);
+}
+
+.AreaGeneric-style{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 6px;
+  min-height: 20px;
+  font-size: 17px;
+  padding: 0.32em;
+  margin: 0.4em;
+}
+
+.OutputTable-style{
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-spacing: 0.5em;
+  min-height: 20px;
+  /*border: 3px solid #ccc; */
+  padding: 3px;
+  font-size: 15px;
+  font-family: Nunito;/*Arial, Helvetica, sans-serif;*/
+  /*background-color: var(--TextArea-BG-color);*/
+  color: var(--PaletteText-color);
+  text-align: left;
+  white-space: pre-line;
+}
+
+.FirstColumn-style{
+  max-width: 92px;
+  word-wrap: break-word;
+}
+
+.InnerOutputTable-style{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 6px;
+  min-height: 20px;
+  border: 3px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(59, 55, 55);
+  text-align: left;
+  border-left: 1px solid rgb(219, 35, 35);
+}
+
+
+/*
+.ButtonGeneric-style{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 6px;
+  font-size: 18px;
+  background-color: rgb(59, 154, 243);
+  color: var(--color2);
+}
+*/
+
+.Keypoint-style{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--SavedSessionTitle-color);
+}
+
+.Disclaimer-style{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--Disclaimer-color);
+  opacity: 0.75;
+}
+
+.ListSubjects-style{
+  font-size: 17px;
+  font-family: Nunito;
+  color: var(--Divider-color);
+  text-align: left;
+  margin-left: -36px;
+  padding: 0;
+}
+
+.ListContents-style{
+  font-size: 14px;
+  font-family: Nunito;
+  color: var(--BulletPoints-color);
+  text-align: left;
+  margin-left: -10px;
+}
+
+.ButtonGeneric-style {
+  background-color: var(--ButtonGenericBG-color);
+  border: 1px solid transparent;
+  /*border-radius: 16px;*/
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: var(--ButtonGeneric-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 1px;
+  margin-bottom: 6px;
+  outline: none;
+  padding: 5px .7em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.ButtonGeneric-style:hover,
+.ButtonGeneric-style:focus {
+  background-color: #07c;
+}
+
+.ButtonGeneric-style:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.ButtonGeneric-style:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+.ButtonGeneric-style:disabled {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  cursor: default;
+}
+
+.ButtonGeneric2-style {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 1px;
+  margin-bottom: 0px;
+  outline: none;
+  padding: 1px .0em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.ButtonGeneric2-style:hover,
+.ButtonGeneric-style:focus {
+  background-color: #07c;
+}
+
+.ButtonGeneric2-style:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.ButtonGeneric2-style:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+.ButtonGenericTransparent-style {
+  background-color: rgb(0,22,36);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 1px;
+  margin-bottom: 0px;
+  outline: none;
+  padding: 1px .0em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.ButtonGenericTransparent-style:hover,
+.ButtonGeneric-style:focus {
+  background-color: #07c;
+}
+
+.ButtonGenericTransparent-style:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.ButtonGenericTransparent-style:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+.popup-content {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(22, 33, 44);
+  background-color: #0064bd;
+}
+
+.swal2-container {
+  z-index: 19999 !important;
+}
+
+.QAQuote {
+  font-style: italic;
+  font-family: Nunito;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  color: #333;
+  border-left: 5px solid #ccc;
+}
+
+.link-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+  color: rgb(59, 55, 55);
+}
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.link-button-light {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-family: Nunito;
+  font-size: 1.0em;
+}
+.link-button-light:hover {
+  text-decoration: underline;
+}
+
+.tooltip {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--TextArea-color);
+  font-weight: bold;
+  padding: 5px 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 370px;
+  min-height: 47px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.arrow,
+.arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+.arrow {
+  visibility: hidden;
+}
+
+.arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+.tooltip[data-popper-placement^='top'] > .arrow {
+  bottom: -4px;
+}
+
+.tooltip[data-popper-placement^='bottom'] > .arrow {
+  top: -4px;
+}
+
+.tooltip[data-popper-placement^='left'] > .arrow {
+  right: -4px;
+}
+
+.tooltip[data-popper-placement^='right'] > .arrow {
+  left: -4px;
+}
+
+
+
+
+.HeaderFigma {
+  width: 464px;
+  height: 80px;
+  /*background: url("../images/v16_19.png");*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.PreHeader {
+  width: 464px;
+  height: 90px;
+  background: var(--BG-color);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.HeaderSettings {
+  width: 56px;
+  color: var(--Text-color);
+  position: absolute;
+  top: 40px;
+  left: 371px;
+  font-family: Nunito;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+.HeaderSubtitle {
+  width: 121px;
+  color: var(--Text-color);
+  position: absolute;
+  top: 52px;
+  left: 89px;
+  font-family: Nunito;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.HeaderAbout {
+  width: 56px;
+  color: var(--Text-color);
+  position: absolute;
+  top: 18px;
+  left: 371px;
+  font-family: Nunito;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+.HeaderTitle {
+  width: 145px;
+  color: var(--Text-color);
+  position: absolute;
+  top: 13px;
+  left: 87px;
+  font-family: Nunito;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.PostHeader {
+  width: 54px;
+  height: 54px;
+  background: url("logonew_54x54.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  overflow: hidden;
+}
+
+.MainButton-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.StyleList-style {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  min-height: 20px;
+  font-size: 16px;
+  padding: 0.32em;
+  margin: 0.4em;
+  background-color: var(--StyleList-color);
+  color: var(--StyleListText-color);
+  font-family: Nunito;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: center;
+}
+
+.PaletteContainer {
+  background: var(--PaletteBG-color);
+  opacity: 1;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;  
+  margin-bottom: 0.8em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  overflow-x: auto;
+}
+
+.MainIconButtonSpec {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+button.MainButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.MainButton svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+button.MainButton:hover {
+  background-color: var(--MainButtonHoverRBG-color);
+}
+
+button.MainButton:active {
+  background-color: var(--MainButtonHover-color);
+}
+
+button.MainButton:disabled {
+  background-color: #e0e0e0;/*var(--DisabledButtonBG-color);*/
+  color: #a0a0a0;/*var(--DisabledButtonBG-color);*/
+  cursor: default;
+}
+
+.PaletteIconButtonSpec {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.PaletteIconButtonSpecThumbs {
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
+button.PaletteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.PaletteButton svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+button.PaletteButton:hover {
+  background-color: var(--PaletteButtonHoverRBG-color);
+}
+
+button.PaletteButton:active {
+  background-color: var(--PaletteButtonHover-color);
+}
+
+button.PaletteButtonEscape {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 1.0rem;
+  left: 1.0rem;
+}
+
+button.PaletteButtonEscape svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+button.PaletteButtonEscape:hover {
+  background-color: var(--PaletteButtonHoverRBG-color);
+}
+
+button.PaletteButtonEscape:active {
+  background-color: var(--PaletteButtonHover-color);
+}
+
+
+.QASearchSpec {
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
+button.QASearchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.QASearchButton svg {
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
+button.QASearchButton:hover {
+  background-color: var(--QAButtonHoverRBG-color);
+}
+
+button.QASearchButton:active {
+  background-color: var(--QAButtonHover-color);
+}
+
+.QA-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+
+.Save-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+
+.AskQuestionInput {
+  width: 80%;
+  height: 100%; 
+  border: None;
+  font-size: 16px; 
+  padding: 6px;
+  color: var(--QuestionInput-color);
+  background-color: var(--AskQuestionBG-color);
+  /*border: none;*/
+  border: 1px solid transparent; /* add a transparent border */
+  margin: 0.5px;
+}
+.AskQuestionInput:focus {
+  outline: none !important;
+}
+
+
+.LoadingQAStyle {
+  font-size: medium;
+  font-family: Nunito;
+  color: var(--LoadingQA-color);
+  text-align: left;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.QuestionHeader {
+  width: 100%;
+  padding: 6px;
+}
+
+.QuestionStyle {
+  padding: 6px;
+  font-size: 15px;
+  font-family: Nunito;/*Arial, Helvetica, sans-serif;*/
+  /*background-color: var(--TextArea-BG-color);*/
+  color: var(--AnswerStyle-color);
+  text-align: left;
+  width: 75%;
+}
+
+.AnswerStyle {
+  padding: 6px;
+  font-size: 15px;
+  font-family: Nunito;/*Arial, Helvetica, sans-serif;*/
+  /*background-color: var(--TextArea-BG-color);*/
+  color: var(--AnswerStyle-color);
+  text-align: left;
+  white-space: pre-line;
+}
+
+.NotionInput {
+  color: var(--NotionInput-color);
+  background-color: transparent;
+}
+
+.FileDisclaimerStyle {
+  padding: 6px;
+  font-size: 15px;
+  font-family: Nunito;/*Arial, Helvetica, sans-serif;*/
+  /*background-color: var(--TextArea-BG-color);*/
+  color: var(--FileDisclaimer-color);
+  text-align: left;
+}
+
+.LongLoadingMsgStyle {
+  padding: 6px;
+  font-size: 15px;
+  font-family: Nunito;/*Arial, Helvetica, sans-serif;*/
+  /*background-color: var(--TextArea-BG-color);*/
+  color: var(--LongLoadingMsg-color);
+  text-align: left;
+}
+
+
+.SavedDividerButtonSpec {
+  width: 1.0rem;
+  height: 1.0rem;
+}
+
+button.SavedDividerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.SavedDividerButton svg {
+  width: 1.0rem;
+  height: 1.0rem;
+}
+
+button.SavedDividerButton:hover {
+  background-color: var(--SavedDividerButtonHoverRBG-color);
+}
+
+button.SavedDividerButton:active {
+  background-color: var(--SavedDividerButtonHover-color);
+}
+
+
+.SavedSessionButtonSpec {
+  width: 1.0rem;
+  height: 1.0rem;
+}
+
+button.SavedSessionButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.SavedSessionButton svg {
+  width: 1.0rem;
+  height: 1.0rem;
+}
+
+button.SavedSessionButton:hover {
+  background-color: var(--SavedSessionButtonHoverRBG-color);
+}
+
+button.SavedSessionButton:active {
+  background-color: var(--SavedSessionButtonHover-color);
+}
+
+
+.SavedQAList-style {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  font-size: 15px;
+  font-family: Nunito;/*Arial, Helvetica, sans-serif;*/
+  /*background-color: var(--TextArea-BG-color);*/
+  color: var(--AnswerStyle-color);
+  text-align: left;
+}
+
+
+
+
+
+
+
+/* Hide default checkbox */
+.custom-checkbox {
+  display: none;
+}
+
+/* Style custom checkbox */
+.checkmark {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Style custom checkbox when checked */
+.custom-checkbox:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Style custom checkbox when checked */
+.custom-checkbox:checked + .checkmark {
+  background-color: var(--Checkbox-color);
+  border-color: var(--Checkbox-color);
+}
+
+/* Style custom checkbox when hovered */
+.custom-checkbox:hover + .checkmark {
+  border-color: var(--Checkbox-color);
+}
+
+/* nunito-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/static/media/fonts/nunito-v25-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('/static/media/fonts/nunito-v25-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/static/media/fonts/nunito-v25-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('/static/media/fonts/nunito-v25-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Define the horizontal line */
+.line {
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
+  position: relative;
+}
+
+/* Define the loading animation */
+@keyframes loading {
+  0% { width: 0; }
+  50% { width: 50%; }
+  100% { width: 100%; }
+}
+
+/* Define the loading style */
+.line.loading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: black;
+  animation: loading 1s infinite;
+}
+
+/* Define the spinner animation */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Define the spinner style */
+.spinner {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  width: 60px;
+  height: 60px;
+  border: 4px solid #000000;
+  border-top: 4px solid #000000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: none; /* Hide the spinner by default */
+}
+
+
+.spinner-wrapper {
+  position: absolute;
+  top: 6px;
+  left: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+}
+
+
+.fixed-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+}
+
+.scrollable-panel {
+  position: absolute;
+  top: 118px;
+  left: 0;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: calc(100% - 118px);
+  overflow-y: scroll;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.first-element {
+  background-color: #b66844; /* Replace with your preferred background color */
+  padding: 10px;
+}
+
+.shepherd-step-element {
+  background-color: white;
+  border: 2px solid #0078d4;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  padding: 20px;
+}
+
+.shepherd-element-attached-bottom {
+  margin-top: 10px;
+}
+
+.shepherd-button-secondary {
+  background-color: #ff0000;
+  color: #333;
+  border: none;
+  margin-right: 10px;
+}
+
+.shepherd-button-primary {
+  background-color: #0091ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.shepherd-cancel-icon {
+  color: #333;
+}
+
+.shep-class-name-1 {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.shepherd-theme-custom .shepherd-modal {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.shepherd-theme-custom .shepherd-content {
+  font-size: 16px;
+  color: #333;
+}
+
+.shepherd-theme-custom .shepherd-button-primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.shepherd-theme-custom .shepherd-button-secondary {
+  background-color: #f44336;
+  color: white;
+}
+
+.shepherd-theme-custom .shepherd-element {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.my-custom-step-class .shepherd-content {
+  font-size: 18px;
+}
+
+.my-custom-step-class .shepherd-button-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shiny-button {
+  background-color: var(--ShinyButton-color);
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 15x;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.AlertBoard-style {
+  background-color: var(--AlertBoardBG-color);
+  border: none;
+  font-family: Nunito;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  z-index: 21000;
+  position: fixed;
+  top: 10px;
+  left: 12px;
+  width: 90%;
+}
+
+.AlertBoardTitle-style {
+  font-size: 18px;
+  color: var(--AlertBoardTitle-color);
+}
+
+.AlertBoardContent-style {
+  font-size: 16px;
+  color: var(--AlertBoardContent-color);
+}
+
+.AlertBoardContentItemText-style {
+  font-size: 14px;
+  color: var(--AlertBoardContent-color);
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 98%;
+  position: absolute;
+  padding: 4px;
+}

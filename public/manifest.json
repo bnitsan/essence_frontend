@@ -1,0 +1,36 @@
+{
+  "short_name": "Essence",
+  "name": "Essence - distill and collect information",
+  "description": "Useful & structured AI summaries, question-answering, notes and workflow integration",
+  "author": "Essence",
+  "permissions": [
+    "tabs",
+    "storage",
+    "contextMenus"
+  ],
+  "version": "0.7.1",
+  "manifest_version": 3,
+  "icons": {
+    "16": "app/logonew.png",
+    "48": "app/logonew.png",
+    "128": "app/logonew.png"
+  },
+  "background": {
+    "service_worker": "app/background.js"
+  },
+  "action": {},
+  "content_scripts" : [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["/css/root.css"],
+      "js": ["/static/js/content.js"]
+    }
+  ],
+  "web_accessible_resources":[
+    {
+      "resources": ["/static/css/content.css", "/static/media/*", "app/query-pdf.js", "app/contentscript_main-compiled.js", "app/query-pdf-key.js"],
+      "matches": ["<all_urls>"],
+      "use_dynamic_url": true
+    }
+  ]
+}
