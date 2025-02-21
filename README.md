@@ -1,6 +1,6 @@
 # Essence frontend extension - a "research copilot" for Chrome
 
-See [essence.fyi/chrome](URL) for a demo.
+See demos at [my humble attempt](https://www.youtube.com/watch?v=CRCSuxZ_Ry0) and [Dutch website review](https://www.youtube.com/watch?v=A89r3ESONUU).
 
 ## Usage
 
